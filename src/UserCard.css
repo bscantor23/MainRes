@@ -1,0 +1,74 @@
+.card{
+    border-radius: 15px;
+    height: 100%;
+    box-shadow: 0.2px 1.5px 3px rgba(0, 0, 0, 0.39);
+    padding: 10px;
+}
+
+.number-card {
+    border-radius: 100%;
+    box-shadow: 0.2px 1.5px 3px rgba(0, 0, 0, 0.39);
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    font-weight: bold;
+    color: #344680;
+}
+
+.image-card {
+    border-radius: 100%;
+    box-shadow: 0.2px 1.5px 3px rgba(0, 0, 0, 0.39);
+    width: 100px;
+}
+
+.user-content {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+       "img-user info-user"
+       "buttons-user buttons-user";
+}
+
+.image-card-container{
+    grid-area: img-user;
+}
+
+.info-user {
+    grid-area: info-user;
+    color: #344680;
+}
+
+.info-user hr {
+    margin:0 !important;
+    width: 120px !important;
+    border: 1px solid #344680 !important;
+}
+
+.button-card {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    box-shadow: 0.2px 1.5px 3px rgba(0, 0, 0, 0.39);
+}
+
+.buttons-container { 
+   grid-area: buttons-user;
+   display: grid;
+   justify-content: flex-end;
+   grid-template-columns: repeat(3,auto);
+   column-gap: 8px;
+}
+
+.more-button {
+    color: #467BD5;
+}
+
+.edit-button {
+    color: #EF5A0C;
+}
+
+.delete-button {
+    color: #DB1818;
+}

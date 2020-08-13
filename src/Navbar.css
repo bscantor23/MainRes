@@ -1,0 +1,45 @@
+.navbar {
+    grid-area: nav;
+    width: 100%;
+    display: grid;
+    background: #7C89B2 !important;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100%;
+    grid-template-areas: "logo-space user-name";
+    justify-content: stretch;
+    align-items: center;
+    padding: 0px 30px;
+    box-shadow: 0.2px 1.5px 3px rgba(0, 0, 0, 0.39);
+}
+
+.navbar > div {
+    color: #fff;
+}
+
+.user-name {
+    grid-area: user-name;
+    display: grid;
+    justify-content: flex-end;
+}
+
+.user-name h2, .logo-space h1 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39);
+    font-weight: bold;
+}
+
+.logo-space {
+    grid-area: logo-space;
+    display: grid;
+    grid-template-areas: "logo name-logo";
+    justify-content: flex-start;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.logo-space h3 {
+    display: inline-block;
+}
+
+.logo {
+    width: 60px;
+}
